@@ -9,6 +9,7 @@ print("""
 
 
 def read_template(path):
+    
     with open(path, 'r') as file:
         content = file.read()
         return content.strip()
