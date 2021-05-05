@@ -1,3 +1,4 @@
+import pytest
 from madlib_cli import __version__
 from madlib_cli.madlib import *
 
@@ -27,3 +28,8 @@ def test_merge():
     assert actual == expected
 
 
+def test_read_template_raises_exception_with_bad_path():
+
+    with pytest.raises(FileNotFoundError):
+        path = "missing.txt"
+        read_template(path)
