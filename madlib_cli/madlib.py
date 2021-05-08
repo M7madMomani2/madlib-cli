@@ -59,5 +59,7 @@ def play(file_path):
 
 # file_path="assets/make_me_a_video_game.txt"
 file_path="assets/dark_and_stormy_night.txt"
-play(file_path)
+
+
+# play(file_path)
 
